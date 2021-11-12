@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Thuê sân bóng</title>
+        <link rel="icon" href="images/logo.png" />
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/responsive.css" />
+    </head>
+
+    <body class="d-flex flex-column">
+        <header>
+            <nav id="navbar" class="navbar navbar-expand-md navbar-light py-md-0">
+                <div class="container-md">
+                    <img class="logo navbar-brand py-0 pl-md-4" src="images/logo.png" alt="logo thuê sân bóng" />
+
+                    <button class="navbar-toggler d-md-none" type="button" data-toggle="collapse" data-target="#collapsible-nav" aria-controls="collapsible-nav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div id="collapsible-nav" class="collapse navbar-collapse">
+                        <ul class="navbar-nav text-uppercase font-weight-bold mt-2 mt-md-0">
+                            <li class="nav-item border-top">
+                                <a class="nav-link text-body px-2 px-md-4 px-lg-5" href="index.html">Trang chủ</a>
+                            </li>
+
+                            <li class="nav-item border-top">
+                                <a class="nav-link text-body px-2 px-md-4 px-lg-5" href="about.html">Giới thiệu</a>
+                            </li>
+
+                            <li class="subnav nav-item border-top">
+                                <div class="d-flex">
+                                    <a class="nav-link text-body flex-grow-1 px-2 px-md-4 px-lg-5" href="fields-list.html">Tìm sân</a>
+
+                                    <button class="subnav-toggler bg-transparent border-0 rounded px-4 d-md-none collapsed" type="button" data-toggle="collapse" data-target="#collapsible-subnav" aria-controls="collapsible-subnav" aria-expanded="false" aria-label="Toggle sub-navigation">
+                                        <span class="subnav-toggler-icon">+</span>
+                                    </button>
+                                </div>
+
+                                <div id="collapsible-subnav" class="collapse">
+                                    <a class="nav-link subnav-link text-body border-top ml-4 ml-md-0 p-2" href="details-1.html">Sân 1</a>
+                                    <a class="nav-link subnav-link text-body border-top ml-4 ml-md-0 p-2" href="details-2.html">Sân 2</a>
+                                    <a class="nav-link subnav-link text-body border-top ml-4 ml-md-0 p-2" href="details-3.html">Sân 3</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item border-top border-bottom">
+                                <a class="nav-link text-body px-2 px-md-4 px-lg-5" href="book.html">Đặt sân</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div id="title-n-desc" class="text-white pb-1 pb-md-3">
+                <div id="title-container">
+                    <img class="img-fluid" src="images/banner.png" />
+                    <h1 id="title">Thuê sân bóng</h1>
+                </div>
+
+                <div id="desc-container" class="container-md px-4 px-sm-5 px-md-0">
+                    <p class="text-justify my-2 my-md-3">Thuê sân bóng là ứng dụng kết nối chủ sân với những đội bóng.</p>
+                    <p class="text-justify my-2 my-md-3">Ứng dụng cung cấp các tiện ích thông minh giúp các đội bóng tìm được sân phù hợp nhất, đặt sân một cách hiệu quả nhất.</p>
+                    <p class="text-justify my-2 my-md-3">Hệ thống quản lý sân, lịch biểu thông minh giảm thiểu tối đa thời gian chi phí, tăng doanh thu cho chủ sân.</p>
+                </div>
+            </div>
+        </header>
+
+        <main class="flex-grow-1">
+            <div class="container-md p-3 p-lg-4">
+                <div class="row">
+                    <div id="l-col" class="col-lg-8 px-0 px-lg-4">
+                        <div class="col-content col-lg-12 mt-2 py-3">
+                            <h2>Sân bóng cho thuê</h2>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <div class="card">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <img class="card-img-top embed-responsive-item" src="images/image2.jpg" alt="Sân bóng nhân tạo Sugar-3" title="Thuê sân bóng" />
+                                        </div>
+
+                                        <div class="card-body pb-2">
+                                            <h3 class="card-title">Sân bóng nhân tạo Sugar-1</h3>
+                                            <p class="card-text"><b>Giới thiệu chung:</b> Sân bóng Sugar-1 được xây dựng và hoàn thành vào tháng 10/2077, bao gồm 3 sân cỏ nhân tạo.</p>
+                                        </div>
+
+                                        <div class="card-body flex-grow-0 pt-2">
+                                            <a href="details-1.html" class="btn btn-primary mr-2">Xem chi tiết</a>
+                                            <a href="book.html?bookedFieldId=0" class="btn btn-primary">Đặt sân</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 mb-4">
+                                    <div class="card">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <img class="card-img-top embed-responsive-item" src="images/image5.jpg" alt="Sân bóng nhân tạo Sugar-3" title="Thuê sân bóng" />
+                                        </div>
+
+                                        <div class="card-body pb-2">
+                                            <h3 class="card-title">Sân bóng nhân tạo Sugar-2</h3>
+                                            <p class="card-text"><b>Giới thiệu chung:</b> Với hệ thống sân cỏ chất lượng, đèn chiếu sáng cao cấp và các dịch vụ được đánh giá là 3*, sân bóng Sugar-2 sẽ mang đến cho người chơi những trận cầu hấp dẫn.</p>
+                                        </div>
+
+                                        <div class="card-body flex-grow-0 pt-2">
+                                            <a href="details-2.html" class="btn btn-primary mr-2">Xem chi tiết</a>
+                                            <a href="book.html?bookedFieldId=1" class="btn btn-primary">Đặt sân</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 mb-4">
+                                    <div class="card">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <img class="card-img-top embed-responsive-item" src="images/image6.jpg" alt="Sân bóng nhân tạo Sugar-3" title="Thuê sân bóng" />
+                                        </div>
+
+                                        <div class="card-body pb-2">
+                                            <h3 class="card-title">Sân bóng nhân tạo Sugar-3</h3>
+                                            <p class="card-text"><b>Giới thiệu chung:</b> Là một trong những sân bóng được đánh giá chất lượng sân cỏ và dịch vụ tốt, sân bóng Sugar-3 đáng để bạn trải nghiệm.</p>
+                                        </div>
+
+                                        <div class="card-body flex-grow-0 pt-2">
+                                            <a href="details-3.html" class="btn btn-primary mr-2">Xem chi tiết</a>
+                                            <a href="book.html?bookedFieldId=2" class="btn btn-primary">Đặt sân</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="embed-responsive embed-responsive-16by9 placeholder-img">
+                                            <p class="embed-responsive-item text-center d-flex justify-content-center align-items-center"><span>Đang cập nhật...</span></p>
+                                        </div>
+
+                                        <div class="card-body pb-2">
+                                            <h3 class="card-title">Đang cập nhật...</h3>
+                                            <p class="card-text"><b>Giới thiệu chung:</b> Đang cập nhật...</p>
+                                        </div>
+
+                                        <div class="card-body pt-2 flex-grow-0">
+                                            <a href="details-3.html" class="btn btn-primary disabled mr-2">Xem chi tiết</a>
+                                            <a href="book.html?bookedFieldId=2" class="btn btn-primary disabled">Đặt sân</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="r-col" class="col-lg-4 h-100 position-sticky">
+                        <div class="col-content col-lg-12 d-block mt-2 py-3">
+                            <aside id="ad">
+                                <a class="text-body text-decoration-none" href="https://www.facebook.com/ManhGB" target="_blank">
+                                    <div class="modal" id="ad-modal" data-backdrop="static">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h4 class="modal-title">Thuê sân bóng giá CỰC RẺ!!!</h4>
+                                                    <button type="button" class="modal-btn close" data-dismiss="modal">&times;</button>
+                                                </div>
+
+                                                <div class="modal-body">
+                                                    <strong style="font-size: 30px"
+                                                        ><span style="font-size: 35px">SIÊU GIẢM GIÁ <span style="font-size: 25px">đến</span> 60%:</span> <br />Từ 500.000đ/h xuống còn 200.000đ/h *<br />
+                                                    </strong>
+                                                    <p class="ad-btn">LIÊN HỆ NGAY</p>
+                                                    <img src="images/ad_image.jpg" alt="Hình ảnh quảng cáo" style="width: 100%" />
+                                                    <p style="font-size: 9px">* Áp dụng khi đăng kí gói Thành viên V.I.P với giá 350.000đ/giờ thuê sân.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </aside>
+                        </div>
+
+                        <div id="fields-pagination-container">
+                            <nav>
+                                <ul class="pagination my-2 my-md-4">
+                                    <li class="page-item flex-fill disabled">
+                                        <a class="page-link text-body text-center px-0 py-3 py-lg-2" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="page-item flex-fill">
+                                        <a class="page-link text-body text-center px-0 py-3 py-lg-2" href="details-1.html">Sân 1</a>
+                                    </li>
+                                    <li class="page-item flex-fill">
+                                        <a class="page-link text-body text-center px-0 py-3 py-lg-2" href="details-2.html">Sân 2</a>
+                                    </li>
+                                    <li class="page-item flex-fill">
+                                        <a class="page-link text-body text-center px-0 py-3 py-lg-2" href="details-3.html">Sân 3</a>
+                                    </li>
+
+                                    <li class="page-item flex-fill disabled">
+                                        <a class="page-link text-body text-center px-0 py-3 py-lg-2" href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="container py-3 py-md-4">
+                <div class="row">
+                    <section class="col-md-8">
+                        <h3 class="text-uppercase font-weight-bold text-center text-md-left">Thuê sân bóng</h3>
+                        <ul class="list-unstyled d-flex flex-column align-items-center align-items-md-start mt-0">
+                            <li class="pb-1 pb-md-2">Liên hệ: <a class="text-body" href="mailto:vumanh21102003@gmail.com">thuesanbong@gmail.com</a></li>
+                            <li class="pb-1 pb-md-2">Facebook: <a class="text-body" href="https://www.facebook.com/ManhGB" target="_blank">Thuê sân bóng</a></li>
+                            <li>Zalo: <a class="text-body" href="https://zalo.me/0388848203" target="_blank">0388848203</a></li>
+                        </ul>
+                    </section>
+
+                    <section class="col-md-4">
+                        <h3 class="text-uppercase font-weight-bold text-center text-md-left">Thông tin</h3>
+                        <ul class="list-unstyled d-flex flex-column align-items-center align-items-md-start my-0">
+                            <li class="pb-1 pb-md-2"><a class="text-body" href="index.html">Trang chủ</a></li>
+                            <li class="pb-1 pb-md-2"><a class="text-body" href="about.html">Giới thiệu</a></li>
+                            <li class="pb-1 pb-md-2"><a class="text-body" href="fields-list.html">Tìm sân</a></li>
+                            <li><a class="text-body" href="book.html">Đặt sân</a></li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+        <script src="js/responsive.js"></script>
+    </body>
+</html>

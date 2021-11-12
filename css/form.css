@@ -1,0 +1,33 @@
+.col-form-label {
+    font-weight: 500;
+}
+
+.field-addr,
+.field-contact {
+    display: none;
+}
+
+.form-control {
+    border-width: 2px;
+}
+
+.form-control:valid,
+.form-control:invalid {
+    background-image: none !important;
+}
+
+.form-check-input:valid ~ .form-check-label {
+    color: initial !important;
+}
+
+.form-check-input {
+    margin-top: 0.2rem;
+}
+
+.total-warning {
+    color: #dc3545;
+}
+
+#book-btn {
+    font-size: 1.1em;
+}

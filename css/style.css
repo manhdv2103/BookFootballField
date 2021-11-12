@@ -1,0 +1,192 @@
+/* general */
+
+body {
+    min-height: 100vh;
+    color: black;
+    font: 17px "Roboto", "Helvetica", sans-serif;
+}
+
+[class*="-primary"],
+[class*="-primary"]:focus,
+[class*="-primary"].disabled {
+    background-color: #68c549;
+    border-color: #68c549;
+}
+
+[class*="-primary"]:hover {
+    background-color: #62b945;
+    border-color: #539e3a;
+}
+
+[class*="-primary"]:not(:disabled):not(.disabled):active {
+    background-color: #539e3a;
+    border-color: #4a8d34;
+}
+
+.disabled {
+    cursor: not-allowed;
+}
+
+/* headings */
+
+h1 {
+    font-size: 1.7em;
+}
+
+h2 {
+    font-size: 1.6em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+h4 {
+    font-size: 1.15em;
+}
+
+h5 {
+    font-size: 1.1em;
+}
+
+h6 {
+    font-size: 1em;
+}
+
+/* navigation bar */
+
+.logo {
+    height: 2em;
+}
+
+.nav-link {
+    padding: 0.8rem 0;
+}
+
+.nav-link:hover {
+    background-color: #68c549;
+    border-radius: 7px;
+}
+
+.subnav-link {
+    font-size: 0.9em;
+}
+
+.subnav-toggler-icon {
+    display: inline-block;
+    color: gray;
+    font-size: 1.5em;
+    transition: transform ease 0.35s;
+    transform: rotate(-45deg);
+}
+
+.subnav-toggler.collapsed .subnav-toggler-icon {
+    transform: rotate(0deg);
+}
+
+.navbar-toggler:active,
+.subnav-toggler:active {
+    background-color: whitesmoke !important;
+}
+
+/* title & description */
+
+#title-n-desc {
+    background: url(../images/header_bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+#title-container {
+    position: relative;
+    text-align: center;
+}
+
+#title {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    width: 100%;
+    font-size: max(8vw, 30px);
+}
+
+#desc-container {
+    text-indent: 1em;
+}
+
+/* ad */
+
+.ad-btn {
+    background-color: gold;
+    margin: 20px 0;
+    padding: 10px 0;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 20px;
+}
+
+/* fields pagination */
+
+#r-col {
+    z-index: 2000;
+    font-size: 1.2em;
+}
+
+@media screen and (orientation: portrait) {
+    #r-col {
+        bottom: 0;
+    }
+}
+
+.page-item.disabled a {
+    color: gray !important;
+}
+
+.page-item.active a {
+    color: white !important;
+    background-color: #68c549 !important;
+    border-color: #68c549 !important;
+}
+
+/* main */
+
+.col-content,
+.card-title {
+    overflow: hidden;
+}
+
+.list-group-item a:hover {
+    color: forestgreen !important;
+    text-decoration: none;
+}
+
+.card-text {
+    overflow: auto;
+}
+
+.embed-responsive img {
+    object-fit: cover;
+}
+
+.placeholder-img {
+    background-color: gray;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    user-select: none;
+}
+
+body.modal-open #fields-pagination-container {
+    filter: brightness(50%);
+}
+
+.not-modal-btn {
+    display: none;
+}
+
+/* footer */
+
+footer {
+    background-color: #68c549;
+    font-size: 1.2em;
+}

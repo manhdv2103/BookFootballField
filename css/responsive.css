@@ -1,0 +1,67 @@
+@media all and (min-width: 768px) {
+    body {
+        font-size: 20px;
+    }
+
+    .nav-item {
+        border: none !important;
+    }
+
+    .nav-link:not(.subnav-link):hover {
+        border-radius: 0 0 25px 25px;
+    }
+
+    .subnav {
+        position: relative;
+    }
+
+    .subnav-link {
+        border: none !important;
+    }
+
+    #collapsible-subnav {
+        background-color: white;
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        text-align: center;
+        border-radius: 0 0 7px 7px;
+        box-shadow: 0 4px 4px 0 #00000033, 0 6px 4px 0 #00000030;
+    }
+
+    .subnav:hover #collapsible-subnav {
+        display: block;
+    }
+
+    #title {
+        font-size: 3em;
+    }
+
+    .list-group-item img {
+        width: 50% !important;
+    }
+
+    .form-check-input {
+        margin-top: 0.3rem;
+    }
+
+    .card-title {
+        height: 2.7em;
+    }
+
+    .card-text {
+        height: 8.5em;
+        font-size: 0.8em;
+    }
+}
+
+@media all and (min-width: 992px) {
+    .col-content {
+        box-shadow: #00000026 0px 2px 8px;
+    }
+
+    #r-col {
+        top: 0;
+        font-size: 1em;
+    }
+}
