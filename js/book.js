@@ -1,4 +1,4 @@
-const invalidFeelbacksList = [
+const invalidFeedbackList = [
     'Hãy chọn sân muốn đặt.',
     'Hãy điền tên của bạn.',
     'Tên không dài quá 50 kí tự.',
@@ -23,53 +23,53 @@ function isInputValid(elem) {
     let inputLength = input.value.length;
 
     const invalidMessage = input.parentElement.getElementsByClassName('invalid-message')[0];
-    let invalidFeelbackId;
+    let invalidFeedbackId;
     let isValid = false;
 
     // Check every possible error cases
     if (inputLength == 0) {
         switch (input.id) {
             case 'fields-selector':
-                invalidFeelbackId = 0;
+                invalidFeedbackId = 0;
                 break;
             case 'booker-name':
-                invalidFeelbackId = 1;
+                invalidFeedbackId = 1;
                 break;
             case 'tel':
-                invalidFeelbackId = 3;
+                invalidFeedbackId = 3;
                 break;
             case 'time-selector':
-                invalidFeelbackId = 6;
+                invalidFeedbackId = 6;
                 break;
             case 'numof-hours':
-                invalidFeelbackId = 7;
+                invalidFeedbackId = 7;
                 break;
             case 'numof-players':
-                invalidFeelbackId = 9;
+                invalidFeedbackId = 9;
                 break;
             case 'numof-teams':
-                invalidFeelbackId = 10;
+                invalidFeedbackId = 10;
                 break;
         }
     } else if (input.validity.patternMismatch) {
         switch (input.id) {
             case 'booker-name':
-                invalidFeelbackId = 2;
+                invalidFeedbackId = 2;
                 break;
             case 'tel':
-                invalidFeelbackId = inputLength > 50 ? 4 : 5;
+                invalidFeedbackId = inputLength > 50 ? 4 : 5;
                 break;
             case 'numof-hours':
-                invalidFeelbackId = 8;
+                invalidFeedbackId = 8;
                 break;
             case 'numof-players':
             case 'numof-teams':
-                invalidFeelbackId = 11;
+                invalidFeedbackId = 11;
                 break;
         }
     } else isValid = true;
 
-    invalidMessage.innerText = invalidFeelbacksList[invalidFeelbackId];
+    invalidMessage.innerText = invalidFeedbackList[invalidFeedbackId];
     return isValid;
 }
 
